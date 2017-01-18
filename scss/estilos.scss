@@ -1,0 +1,336 @@
+//------------------------------
+// PATRON DE COLORES
+//------------------------------
+$texto: #111111;
+$principal: #12AFAF;
+$secundario: #009500;
+
+html {
+    font-size: 15px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $texto;
+}
+/*Estilos bloque-buscar*/
+#bloque-buscar {
+    flex: 1 1 100%;
+}
+
+#menu-principal {
+    flex: 1 1 100%;
+    
+    ul {
+        list-style: none;
+        margin: 1rem 0 0 0;
+        padding: 0;
+
+        a {
+            display: block;
+            padding: .8rem 0;
+            text-align: center;
+            color: #FFF;
+            text-transform: uppercase;
+            border-top: 1px solid #222;
+            text-decoration: none;
+            
+            &:hover {
+                color: $principal;
+            }
+        }
+
+        li.active a {
+            color: $principal;
+        }
+    }
+}
+
+.contenedor-bloque-buscar {
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+
+    input[type="text"] {
+        flex: 1 1 auto;
+        padding: 1rem;
+        border: 0;
+        border-radius: 5px 0 0 5px;
+        padding: 1rem;
+    }
+
+    input[type="submit"] {
+        flex: 0 1 auto;
+        border: 0;
+        border-radius: 0 5px 5px 0 ;
+        background: $principal;
+        color: #FFF;
+    }
+}
+
+.bienvenidos {
+    background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    color: #FFF; 
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    background: $texto;
+    color: #FFF;
+    padding: .5rem 0;
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+/* Estilos para el boton:  buscar y menu */
+.boton-menu {
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 .5rem;
+    background: transparent;
+    color: #FFFFFF;
+
+    &:focus {
+        outline: 0;
+    }
+}
+.boton-buscar {
+    margin-left: auto;
+    margin-right: .8rem;
+    @extend .boton-menu;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $principal;
+    border-color: transparent;
+    margin-top: 1rem;
+    transition: all .5s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $secundario;
+        border-color: transparent;
+    }
+}
+
+.texto-encabezado {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    
+    .display-4 {
+        margin-top: 4rem;
+    }
+}
+.flecha-bajar {
+    a {
+        display: inline-block;
+        color: #FFF;
+        font-size: 4rem;
+        animation: flecha-animada 2s ease-in-out infinite;
+    }
+}
+
+@keyframes flecha-animada {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+//------------------------------
+// SECCION AGENCIA
+//------------------------------
+.agencia {
+    background: $principal;
+    color: #FFF;
+
+    img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+//------------------------------
+// SECCION TU MEJOR ELECCION
+//------------------------------
+.tu-mejor-eleccion {
+    h2 {
+        span {
+            color: $principal;
+        }
+    }
+    ul {
+        list-style: none;
+
+        li {
+            min-height: 9rem;
+            .fa {
+                font-size: 2.3rem;
+                background: $secundario;
+                border-radius: 50%;
+                width: 4.7rem;
+                height: 4.7rem;
+                line-height: 4.7rem;
+                color: #FFF;
+            }
+            .contenedor-eleccion{
+                h4 {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    margin-top: .8rem;
+                }
+            }
+        }
+    }
+}
+//------------------------------
+// SECCION SERVICIOS
+//------------------------------
+.servicios {
+    background: url("../images/fondo-servicios.jpg") no-repeat center center;
+    background-size: cover;
+    color: #FFF;
+
+    article {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    h3 {
+        flex: 1 1 auto;
+        margin: 0;
+        font-size: 1.1rem;
+        a {
+            color: #FFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            &::after {
+                content: "\f054";
+                font-family: FontAwesome;
+                font-size: 2rem;
+                margin-left: 1rem;
+                opacity: .5;
+                position: relative;
+                left: 0;
+                transition: all .5s ease;
+            }
+            &:hover::after {
+                left: -.5rem;
+                opacity: 1;
+                color: $principal;
+            }
+        }
+    }
+
+    img {
+        flex: 0 0 60px;
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+}
+
+//------------------------------
+// SECCION ULTIMOS PROYECTOS
+//------------------------------
+.ultimos-proyectos {
+    a {
+        text-decoration: none;
+        h4 {
+            font-size: rem;
+            font-weight: bold;
+            text-align: center;
+            color: $texto;
+        }
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .owl-nav{
+        display: flex;
+        justify-content: center;
+        margin: .3rem 0;
+    }
+    .owl-prev,
+    .owl-next {
+        font-size: 3rem;
+        margin:0 .5rem;
+        color: $principal;
+        transition: all .5s ease;
+        &:hover {
+            color: $secundario;
+        }
+    }
+    
+}
+//------------------------------
+// SECCION PIEDEPAGINA
+//------------------------------
+.piedepagina {
+    background: $texto;
+    color: #FFF;
+    font-size: .9rem;
+
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: #FFF;
+            font-size: 2rem;
+            margin: 0 .5rem;
+            opacity: .7;
+            transition: all .5s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+            
+        }
+    }
+}
+.ir-arriba {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: $principal;
+    text-decoration: none;
+    z-index: 99999;
+    line-height: 0;
+    transition: all .5s ease;
+
+    &:hover,
+    &:focus {
+        outline: 0;
+        text-decoration: none;
+        color: #FFF;
+    }
+}
