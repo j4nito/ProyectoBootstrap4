@@ -334,3 +334,136 @@ body {
         color: #FFF;
     }
 }
+//------------------------------
+// MEDIA QUERIES
+//------------------------------
+
+@media (min-width:768px) {
+    #menu-principal {
+        height: auto !important;
+        display: block;
+        flex: 0 1 auto;
+        margin-left: auto;
+        order: 1;
+        ul {
+            display: flex;
+            margin: 0 0 0 0;
+            li {
+                a{
+                    padding: .8rem;
+                    text-transform: capitalize;
+                    margin: 0 .3rem;
+                    border-top: 0;
+                    border-bottom: 4px solid transparent;
+                    transition: all .5s ease;
+                }
+                &.active a,
+                & a:hover {
+                    color: $principal;
+                    border-bottom: 4px solid;
+                }
+            }
+            
+        }
+    }
+    .boton-buscar {
+        margin-left: 1rem;
+        margin-right: 0;
+        order: 2;
+    }
+    
+    #bloque-buscar {
+        order: 3;
+        position: absolute;
+        width: 20rem;
+        right: 3rem;
+        top: 2.8rem;
+        transition: all .5s ease;
+    }
+
+    .servicios {
+        article {
+            margin: 1rem 0;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+            &:hover img {
+                transform: rotateY(360deg);
+                transform-style: preserve-3d;
+            }
+        }
+
+        img {
+                flex: 0 0 160px;
+                overflow: hidden;
+                margin-right: 0;
+                margin-bottom: 1rem;
+                transition: all 1s ease;
+        }
+        h3 {
+            margin:0 0 .5rem 0;
+            font-size: 1.5rem;
+            flex: 0 1 auto;
+            a {
+                display: block;
+                width: 100%;
+                &::after {
+                    content: "";
+                }
+            }
+        }
+        p {
+            width: 100%;
+        }
+        .btn-secondary {
+            margin-top: auto;
+        }
+
+
+    }
+}
+
+@media (min-width:992px) {
+    html {
+        font-size: 16px;
+    }
+    .tu-mejor-eleccion {
+        ul {
+            &:first-child .fa {
+                order: 1;
+                margin-left: 1rem;
+                margin-right: 0;
+            }
+            li {
+                display: flex;
+                min-height: 7rem;
+                
+                .fa {
+                    flex: 0 1 auto;
+                    margin-right: 1rem;
+                    text-align: center;
+                    transition: all 1s ease;
+                }
+                &:hover .fa {
+                    transform: rotateY(360deg);
+                    transform-style: preserve-3d;
+                    background: $principal;
+                }
+                .contenedor-eleccion {
+                    flex: 1 0 0px;
+                    h4 {
+                        margin-top: 0;
+                        font-size: 1rem;
+                    }
+                }
+                p {
+                    font-size: .85rem;
+                }
+            }
+        }
+        
+    }
+    
+    
+}

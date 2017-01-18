@@ -27,7 +27,7 @@
                 <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
-                <button type="button" class="boton-menu" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                <button type="button" class="boton-menu hidden-md-up" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <!--formulario buscar-->
