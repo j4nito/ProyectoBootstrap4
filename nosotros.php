@@ -39,8 +39,8 @@
                 <!--fin formulario-->
                 <nav id="menu-principal" class="collapse">
                     <ul>
-                        <li class="active"><a href="index.php">Inicio</a></li>
-                        <li><a href="nosotros.php">Nosotros</a></li>
+                        <li><a href="index.php">Inicio</a></li>
+                        <li class="active"><a href="nosotros.php">Nosotros</a></li>
                         <li><a href="servicios.php">Servicios</a></li>
                         <li><a href="contacto.php">Contacto</a></li>
                     </ul>
@@ -56,7 +56,7 @@
         </div>
         
     </section>
-    <section class="ruta">
+    <section class="ruta p-y-1">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-xs-right">
@@ -65,14 +65,55 @@
             </div>
         </div>
     </section>
-    <main>
+    <main class="p-y-1">
         <div class="container">
             <div class="row">
                 <article class="col-xs-12 col-md-8">
                     <h2>Trabajamos para tu éxito</h2>
                     <p>NETWORK apuesta por la simplicidad, la actualidad y la originalidad. Creemos que la innovación creativa es la única vía para promover y fomentar contenidos de calidad que fortalezcan la conﬁanza de los usuarios en las posibilidades y nuevos usos de los productos digitales.</p>
                     <p>Nuestro objetivo es conseguir que clientes y usuarios se sientan conectados en el nuevo mundo de la información con servicios y contenidos que no diﬁculten su relación, sino que la simpliﬁquen y la conviertan en un hecho cotidiano, agradable y satisfactorio</p>
-                    <p>Acordeones</p>
+                
+                    <div id="accordion">
+                        <div class="panel panel-default">
+                            <h4 class="panel-heading">
+                               <a data-toggle="collapse" data-parent="#accordion" href="#tab-mision">
+                                    MISIÓN
+                                </a>
+                            
+                            </h4>
+
+                            <div id="tab-mision" class="panel-collapse collapse in">
+                                <p>
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <h4 class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#tab-vision">
+                                    VISIÓN
+                                </a>
+                         
+                            </h4>
+                            <div id="tab-vision" class="panel-collapse collapse">
+                                <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <h4 class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#tab-valores">
+                                    VALORES
+                                </a>
+                            </h4>
+                            <div id="tab-valores" class="panel-collapse collapse">
+                                <p>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
                 <aside class="col-xs-12 col-md-4">
                     <img src="images/nosotros.svg" alt="Nosotros">

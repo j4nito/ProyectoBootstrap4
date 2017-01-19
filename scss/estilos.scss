@@ -334,6 +334,46 @@ body {
         color: #FFF;
     }
 }
+
+//------------------------------
+// PAGINA NOSOTROS
+//------------------------------
+.paginas-internas {
+    .bienvenidos {
+        height: 50vh;
+    }
+    .ruta {
+        background: $principal;
+        color: #FFF;
+        a {
+            color: #FFF;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .panel {
+        .panel-heading {
+            font-size: 1.2rem;
+            a {
+                background: $principal;
+                color: #FFF;
+                display: block;
+                padding: 1rem;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: all .5s ease;
+                &:hover {
+                    background: $secundario;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+
 //------------------------------
 // MEDIA QUERIES
 //------------------------------
