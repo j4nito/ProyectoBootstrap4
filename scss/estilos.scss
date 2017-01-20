@@ -116,7 +116,6 @@ body {
     color: #fff;
     background-color: $principal;
     border-color: transparent;
-    margin-top: 1rem;
     transition: all .5s ease;
 
     &:hover,
@@ -134,6 +133,9 @@ body {
     
     .display-4 {
         margin-top: 4rem;
+    }
+    .btn-primary {
+        margin-top: 1rem;
     }
 }
 .flecha-bajar {
