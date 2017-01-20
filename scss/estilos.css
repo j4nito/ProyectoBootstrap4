@@ -323,6 +323,41 @@ body {
     text-decoration: none;
     color: #FFF; }
 
+.paginas-internas .bienvenidos {
+  height: 50vh; }
+.paginas-internas .ruta {
+  background: #12AFAF;
+  color: #FFF; }
+  .paginas-internas .ruta a {
+    color: #FFF;
+    text-decoration: underline; }
+    .paginas-internas .ruta a:hover {
+      text-decoration: none; }
+.paginas-internas .panel .panel-heading {
+  font-size: 1.2rem; }
+  .paginas-internas .panel .panel-heading a {
+    background: #12AFAF;
+    color: #FFF;
+    display: block;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    -webkit-transition: all .5s ease;
+            transition: all .5s ease; }
+    .paginas-internas .panel .panel-heading a:hover {
+      background: #009500;
+      color: #FFF; }
+
+.paginas-internas .lista-servicios {
+  background: #009500; }
+  .paginas-internas .lista-servicios .item-servicios {
+    background: #FFF;
+    text-align: center;
+    border: 5px solid #057705;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1rem; }
+
 @media (min-width: 768px) {
   #menu-principal {
     height: auto !important;

@@ -373,6 +373,33 @@ body {
     }
 }
 
+//------------------------------
+// PAGINA SERVICIOS
+//------------------------------
+.paginas-internas {
+    .lista-servicios {
+        background: $secundario;
+
+        .item-servicios {
+            background: #FFF;
+            text-align: center;
+            border: 5px solid #057705;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            .fa {
+                font-size: 6rem;
+                color: $principal;
+                margin-bottom: 1rem;
+                transition: all 1s ease;
+            }
+            &:hover .fa {
+                transform: rotateY(360deg);
+                transform-style: preserve-3d;
+            }
+        }
+    }
+}
 
 //------------------------------
 // MEDIA QUERIES
@@ -459,9 +486,25 @@ body {
         .btn-secondary {
             margin-top: auto;
         }
-
-
     }
+
+    /*página servicios*/
+        .paginas-internas {
+            .lista-servicios {
+                .col-md-4 {
+                    display: flex;
+                }
+                .item-servicios {
+                    display: flex;
+                    flex-direction: column;
+                    .btn-primary {
+                        margin-top: auto;
+                    }
+
+                }
+            }
+        }
+
 }
 
 @media (min-width:992px) {
